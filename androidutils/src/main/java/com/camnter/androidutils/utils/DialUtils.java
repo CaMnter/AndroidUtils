@@ -1,10 +1,15 @@
-package com.camnter.androidutils.utils;
+package com.camnter.newlife.utils;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 
-public class DialUtil {
+/**
+ * Description：DialUtils
+ * Created by：CaMnter
+ * Time：2015-10-13 11:53
+ */
+public class DialUtils {
 
     /**
      * Have a dial-up view
@@ -17,7 +22,7 @@ public class DialUtil {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:" + phoneNumber));
-        activity.startActivity(intent);        
+        activity.startActivity(intent);
 
     }
 

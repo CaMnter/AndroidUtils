@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.camnter.androidutils.utils;
+package com.camnter.newlife.utils;
 
 import android.net.Uri;
 
