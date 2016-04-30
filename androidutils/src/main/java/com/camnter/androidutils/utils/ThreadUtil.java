@@ -1,4 +1,4 @@
-package com.camnter.newlife.utils;
+package com.camnter.androidutils.utils;
 
 import android.os.Looper;
 

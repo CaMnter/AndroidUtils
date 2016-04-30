@@ -2,7 +2,7 @@ package com.camnter.newlife.utils;
 
 import android.app.Activity;
 import android.graphics.Color;
-
+import com.camnter.androidutils.utils.ResourcesUtils;
 import java.util.regex.Pattern;
 
 /**
@@ -28,6 +28,7 @@ public class ColorUtil {
         return color;
     }
 
+
     /**
      * 将十六进制 颜色代码 转换为 int
      *
@@ -42,6 +43,7 @@ public class ColorUtil {
         return Color.parseColor(color);
     }
 
+
     /**
      * 设置颜色透明度
      *
@@ -55,5 +57,4 @@ public class ColorUtil {
         int blue = Color.blue(color);
         return Color.argb(alpha, red, green, blue);
     }
-
 }

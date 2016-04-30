@@ -1,4 +1,4 @@
-package com.camnter.newlife.utils;
+package com.camnter.androidutils.utils;
 
 /**
  * Description：ClickUtil
@@ -12,20 +12,24 @@ public class ClickUtils {
 
     public static ClickUtils ourInstance;
 
+
     public static ClickUtils getInstance() {
         if (ourInstance == null) ourInstance = new ClickUtils();
         return ourInstance;
     }
+
 
     public static ClickUtils setInterval(long interval) {
         clickInterval = interval;
         return getInstance();
     }
 
+
     public static ClickUtils clearLastTime() {
         lastClickTime = 0L;
         return getInstance();
     }
+
 
     public synchronized static boolean clickable() {
         long currentTime = System.currentTimeMillis();
@@ -33,5 +37,4 @@ public class ClickUtils {
         lastClickTime = currentTime;
         return status;
     }
-
 }
